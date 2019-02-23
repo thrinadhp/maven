@@ -20,7 +20,7 @@ node('master')
     stage('ContinuousDelivery')
     {
         input message: 'Waiting for approval from Delivery Manager!', submitter: 'kumar'
-        sh 'scp /root/.jenkins/workspace/script/webapp/target/webapp.war ubuntu@172.31.22.148/var/lib/tomcat7/webapps/prodenv.war'
+        sh 'scp /root/.jenkins/workspace/script/webapp/target/webapp.war ubuntu@172.31.22.148:/var/lib/tomcat7/webapps/prodenv.war'
     }
     
   
