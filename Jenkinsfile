@@ -14,7 +14,7 @@ node('master')
     }
     stage('ContinuousTesting')
     {
-        git 'https://github.com/selenium-saikrishna/TestingNew.git'
+        git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
         sh 'java -jar /root/.jenkins/workspace/script/testing.jar'
     }
     stage('ContinuousDelivery')
